@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/Frontend/index.html
+    - export DEPLOYPATH=/home/betha/public_html
     - /bin/cp -r * $DEPLOYPATH
     - cd $DEPLOYPATH && npm install && npm run build
