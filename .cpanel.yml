@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/Frontend/index.html
+    - /bin/cp -r * $DEPLOYPATH
+    - cd $DEPLOYPATH && npm install && npm run build
